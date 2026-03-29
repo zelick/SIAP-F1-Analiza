@@ -151,7 +151,7 @@ def build_season_dataset(
         how="left"
     )
 
-    # --- Determine champions (same as before) ---
+    # --- Determine champions ---
     last_round_per_year = (
         standings.groupby("year")["round"]
         .max()
